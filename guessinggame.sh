@@ -11,7 +11,7 @@ while true; do
     correct_count=$(count_files)
     echo "How many files are in the current directory?"
     read user_guess
-
+    # Usage of If condition
     if [[ $user_guess -lt $correct_count ]]; then
         echo "Too low! Try again."
     elif [[ $user_guess -gt $correct_count ]]; then
